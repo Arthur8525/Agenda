@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'contatos/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Agenda de Contatos</h1>
+        <a href="{% url 'lista_contatos' %}">Ver Contatos</a>
+    </header>
+</body>
+</html>

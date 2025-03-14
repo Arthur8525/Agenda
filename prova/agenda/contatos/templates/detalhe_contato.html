@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Detalhe do Contato</title>
+    <link rel="stylesheet" href="{% static 'contatos/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Detalhes do Contato</h2>
+        <p><strong>Nome:</strong> {{ contato.nome }}</p>
+        <p><strong>Telefone:</strong> {{ contato.telefone }}</p>
+        <p><strong>Email:</strong> {{ contato.email }}</p>
+        <p><strong>Endereço:</strong> {{ contato.endereco }}</p>
+        <a href="{% url 'lista_contatos' %}">Voltar para a Lista</a>
+    </div>
+</body>
+</html>
